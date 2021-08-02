@@ -17,6 +17,7 @@ const Dashboard = () => {
       const isWinner = newWinnerArray.length === 1 && newWinnerArray[0] !== null;
       if (isWinner) {
         debugger;
+        console.log(turn);
         return isWinner;
       }
       return array;
@@ -28,7 +29,6 @@ const Dashboard = () => {
 
   const onClickSquare = (squareNumber: number) => {
     const newSquare = [...squares];
-
     newSquare.splice(squareNumber, 1, turn);
     setSquares(newSquare);
     changeTurn();
