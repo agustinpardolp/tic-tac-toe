@@ -1,13 +1,11 @@
-
-
-  $white: #ffffff;
-  $wildSand: #faebd7;
-  $cedarChest:#db504a;
-  $sunray:#edae49; 
-  $ligthSteelBlue: #b4cded;
-  $budGreen: #79b473;
-  $darkSlateBlue:#3d3b8e;
-
+$white: #ffffff;
+$wildSand: #faebd7;
+$cedarChest:#db504a;
+$sunray:#edae49;
+$ligthSteelBlue: #b4cded;
+$budGreen: #79b473;
+$darkSlateBlue:#3d3b8e;
+$romanSilver: #89909F;
 
 body {
   margin: 0;
@@ -24,11 +22,24 @@ code {
 }
 
 .navbar {
-  & .container{
-  justify-content: center;
-  .navbar-brand {
-    color: $wildSand;
-    font-size: 5rem;
+  & .container {
+    justify-content: center;
+
+    .navbar-brand {
+      color: $wildSand;
+      font-size: 5rem;
+    }
   }
+}
+
+.square {
+  &.squareX {
+    background-color: #CD493A;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%)
+  }
+
+  &.squareO {
+    background-color: #4392F1;
+    border-radius: 50%;
   }
 }

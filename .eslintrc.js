@@ -33,7 +33,8 @@ module.exports = {
         selector: 'enumMember',
         format: ['UPPER_CASE']
       }
-    ]
+    ],
+    'import/no-cycle': [2, { ignoreExternal: true }]
   },
   settings: {
     react: {
