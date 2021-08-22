@@ -5,3 +5,31 @@
     justify-content: center;
     margin-top: 100px;
 }
+
+.userLabel {
+    font-size: 32px;
+    margin: 10px;
+}
+
+.resultMain {
+    margin-left: 50px;
+    h3{
+        color: $darkSlateBlue
+    }
+}
+
+.resultContainer {
+    display: grid;
+    justify-content: center;
+    label{
+        text-transform: capitalize;
+    }
+    span {
+        justify-self: center;
+    }
+}
+
+.container {
+    display: flex;
+
+}

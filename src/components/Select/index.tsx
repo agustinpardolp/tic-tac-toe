@@ -1,4 +1,6 @@
-import React from 'react';
+/* eslint-disable no-debugger */
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React, { ChangeEventHandler } from 'react';
 import { Form } from 'react-bootstrap';
 
 import { SelectProps } from '../../types';
@@ -6,11 +8,11 @@ import { SelectProps } from '../../types';
 interface Props {
   options: SelectProps[];
   selectTitle?: string;
-  value?: SelectProps;
+  onChange: ChangeEventHandler<any>;
 }
 
-const Select = ({ options, selectTitle, value }: Props) => (
-  <Form.Select aria-label="select" defaultValue={value?.value}>
+const Select = ({ options, selectTitle, onChange }: Props) => (
+  <Form.Control aria-label="select" as="select" onChange={onChange}>
     <option>{selectTitle}</option>
     {options &&
       options.map((option: SelectProps) => (
@@ -18,7 +20,7 @@ const Select = ({ options, selectTitle, value }: Props) => (
           {option.name}
         </option>
       ))}
-  </Form.Select>
+  </Form.Control>
 );
 
 export default Select;

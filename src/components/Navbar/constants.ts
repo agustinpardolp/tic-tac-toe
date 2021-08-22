@@ -1,1 +1,1 @@
-export const title = 'TIC-TACT-TOE';
+export const title = 'TIC-TAC-TOE';
